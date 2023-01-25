@@ -37,6 +37,12 @@ h6 {
   margin-bottom: 2rem;
 }
 
+.title-light {
+  color: var(--clr-white);
+  font-size: 3rem;
+  font-weight: 500;
+}
+
 .text-bold {
   font-weight: 900;
 }
@@ -46,6 +52,7 @@ h6 {
   font-weight: 700;
   font-size: 0.85rem;
   border: none;
+  border: 2px solid transparent;
   cursor: pointer;
   border-radius: 0.75rem;
   box-shadow: 3px 3px 10px 5px rgba(0, 0, 0, 0.05);
@@ -59,6 +66,8 @@ h6 {
 
 .btn-filled:hover {
   color: var(--clr-button);
+  border: 2px solid var(--clr-button);
+
   background-color: var(--clr-white);
 }
 
@@ -94,6 +103,12 @@ h6 {
   color: var(--clr-main-font);
   font-size: 3rem;
   cursor: pointer;
+}
+
+.card-title {
+  font-size: 0.75rem;
+  margin-bottom: 0.75rem;
+  color: var(--clr-white);
 }
 
 /* HEADER */
@@ -272,4 +287,156 @@ h6 {
   font-size: 0.75rem;
   color: var(--clr-main-font);
   margin-top: 1rem;
+}
+
+/* HIGHLIGHTS */
+.main .highlights {
+  background: var(--clr-main-font);
+  color: var(--clr-white);
+  margin-bottom: 5rem;
+  margin-top: 3rem;
+}
+
+.main .highlishts-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  height: 150px;
+}
+
+.main .highlights .highlights-imgs {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.main .highlights .highlights-imgs img {
+  width: 200px;
+}
+
+.main .highlights .highlights-imgs #student-img1 {
+  position: absolute;
+  top: -35px;
+  right: 700px;
+}
+
+.main .highlights .highlights-imgs #student-img2 {
+  position: absolute;
+  top: -35px;
+  right: 400px;
+}
+
+.main .highlights .highlights-imgs #student-img3 {
+  position: absolute;
+  top: -35px;
+  right: 100px;
+}
+
+.main .highlights .highlights-text {
+  width: 350px;
+}
+
+.main .highlights .highlights-text p {
+  font-size: 0.9rem;
+}
+
+/* CALENDAR */
+.main .calendar {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.main .calendar > div {
+  width: 30%;
+  margin-bottom: 2rem;
+}
+
+.main .calendar .wrapper {
+  margin-bottom: 2rem;
+  height: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.main .calendar .seminars .seminar-card {
+  background-color: var(--clr-main-font);
+  border-radius: 0.75rem;
+  padding: 1rem;
+  text-align: center;
+  color: var(--clr-white);
+  height: 100%;
+  cursor: pointer;
+  box-shadow: 0 3px 4px 0 rgb(0 0 0 / 14%), 0 3px 3px -2px rgb(0 0 0 / 12%),
+    0 1px 8px 0 rgb(0 0 0 / 20%);
+}
+
+.main .calendar .seminars .seminar-card .card-text {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  font-size: 0.75rem;
+}
+
+.main .blog .blog-list {
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  height: 100%;
+}
+
+.main .blog .blog-item {
+  background-color: var(--clr-highlight-dark);
+  border-radius: 0.75rem;
+  text-align: left;
+  cursor: pointer;
+  box-shadow: 0 3px 4px 0 rgb(0 0 0 / 14%), 0 3px 3px -2px rgb(0 0 0 / 12%),
+    0 1px 8px 0 rgb(0 0 0 / 20%);
+}
+
+.main .blog .blog-item .card-img {
+  height: 100px;
+}
+
+.main .blog .blog-item .card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  border-top-left-radius: 0.75rem;
+  border-top-right-radius: 0.75rem;
+}
+
+.main .blog .blog-item .card-title {
+  padding: 1rem;
+  margin: auto;
+}
+
+.main .initiatives .initiative-card {
+  background-color: lightblue;
+  height: 100%;
+  border-radius: 0.75rem;
+  padding: 2rem;
+  color: var(--clr-white);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  background: linear-gradient(to right, #ba8dda 0%, #9b5dc6 100%);
+  box-shadow: 0 3px 4px 0 rgb(0 0 0 / 14%), 0 3px 3px -2px rgb(0 0 0 / 12%),
+    0 1px 8px 0 rgb(0 0 0 / 20%);
+
+  cursor: pointer;
+}
+
+.main .initiatives .initiative-card img {
+  width: 70%;
+  margin-bottom: 2rem;
 }
