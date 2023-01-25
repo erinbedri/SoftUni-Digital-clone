@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css");
+
+:root {
+  --clr-main-font: #3f4d5a;
+  --clr-highlight: #f1f1f1;
+  --clr-button: #fc4c50;
+
+  --clr-white: white;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  padding: 1rem 8rem;
+}
+
+.text-bold {
+  font-weight: 900;
+}
+
+.btn {
+  padding: 0.5rem 1.5rem;
+  font-weight: 700;
+  font-size: 0.85rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 0.75rem;
+  box-shadow: 3px 3px 10px 5px rgba(0, 0, 0, 0.05);
+}
+
+.btn-filled {
+  color: var(--clr-white);
+  background-color: var(--clr-button);
+  transition: 0.2s ease-in-out;
+}
+
+.btn-filled:hover {
+  color: var(--clr-button);
+  background-color: var(--clr-white);
+}
+
+.btn-outline {
+  color: var(--clr-button);
+  background-color: var(--clr-white);
+}
+
+.btn-outline:hover {
+  color: var(--clr-white);
+  background-color: var(--clr-button);
+}
+
+.fa-magnifying-glass {
+  font-size: 1.25rem;
+}
+
+.fa-check {
+  color: var(--clr-button);
+  font-size: 1.1rem;
+  padding-right: 0.5rem;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .nav-logo {
+  width: 125px;
+}
+
+.header .main-nav .nav-list {
+  display: flex;
+  gap: 1rem;
+  padding-left: 0;
+}
+
+.header .main-nav .nav-list .nav-item a {
+  text-decoration: none;
+  padding: 0.5rem;
+  color: var(--clr-main-font);
+  font-weight: 700;
+  transition: 0.2s ease-in-out;
+}
+
+.header .main-nav .nav-list .nav-item a:hover {
+  color: var(--clr-main-font);
+  background-color: var(--clr-highlight);
+  border-radius: 0.5rem;
+}
+
+.header .nav-controls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* HERO */
+.main .hero {
+  height: 75vh;
+
+  background: linear-gradient(
+    90deg,
+    rgba(63, 77, 90, 1) 0%,
+    rgba(252, 76, 80, 0.9) 100%
+  );
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  color: var(--clr-white);
+}
+
+.main .hero .hero-title {
+  margin-bottom: 2rem;
+}
+
+.main .hero .hero-list {
+  margin-bottom: 4rem;
+  padding-left: 0;
+}
+
+.main .hero .hero-list .hero-item {
+  font-size: 0.95rem;
+}
+
+.main .hero .hero-list .hero-item:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.main .hero .hero-img {
+  height: 100%;
+}
+
+/* SUBHERO */
+.main .subhero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: calc(100vh - 75vh - 88px);
+}
+
+.main .subhero-left {
+  background-color: var(--clr-button);
+  height: 100%;
+  padding-left: 8rem;
+
+  display: flex;
+  align-items: center;
+
+  clip-path: polygon(0 0, 100% 0%, 70% 100%, 0% 100%);
+}
+
+.main .subhero-left h3 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: var(--clr-white);
+  margin-right: 10rem;
+}
+
+.main .subhero-left img {
+  width: 275px;
+}
+
+.main .subhero-right p {
+  padding-right: 8rem;
+  padding-left: 1rem;
+  line-height: 1.75rem;
+
+  font-size: 0.9rem;
+}
